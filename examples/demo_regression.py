@@ -33,7 +33,7 @@ y_train_normalized = (y_train - y_mean) / y_std
 y_test_normalized = (y_test - y_mean) / y_std
 
 model_path = hf_hub_download(repo_id="stableai-org/LimiX-16M", filename="LimiX-16M.ckpt", local_dir="./cache")
-model = LimiXPredictor(device=torch.device('cuda'), model_path=model_path, inference_config='config/reg_default_retrieval.json')
+model = LimiXPredictor(device=torch.device('cuda'), model_path=model_path, inference_config='config/reg_default_16M_retrieval.json')  # config/reg_default_noretrieval.json
 y_pred = model.predict(X_train, y_train_normalized, X_test, task_type="Regression")    
 
 # Compute RMSE and R²

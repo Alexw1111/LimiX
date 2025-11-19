@@ -81,6 +81,13 @@ class LimiXPredictor:
         # self.task_type = task_type
         self.mask_prediction = mask_prediction        
         self.inference_with_DDP=inference_with_DDP
+
+        if device.type == 'cpu':
+            if self.inference_config[0]["retrieval_config"]["use_retrieval"]:
+                raise ValueError("Retrieval is not supported for CPU inference! Please use the noretrieval configuration when running on a CPU device!")
+            self.mix_precision = False
+            print("Mixed precision is not supported for CPU inference, so it has been automatically disabled")
+            
         self.model=load_model(model_path=model_path,mask_prediction=mask_prediction)
 
         self.preprocess_pipelines = []
