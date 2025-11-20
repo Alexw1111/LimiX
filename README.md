@@ -34,17 +34,26 @@ The LimiX model achieved SOTA performance across multiple tasks.
 
 ## ➩ Classification (Tech Report)
 <div align="center">
-  <img src="doc/Classifier.png" alt="Classification" width="80%">
+  <img src="doc/classification_tabarena_lite.png" width="60%">
+</div>
+
+<div align="center">
+  <img src="doc/Classifier.png" width="45%" style="margin-right:2%;">
+  <img src="doc/TabArena_lite_CLS.png" width="42.5%">
 </div>
 
 ## ➩ Regression (Tech Report)
 <div align="center">
-  <img src="doc/Regression.png" alt="Regression" width="60%">
+  <img src="doc/regression_tabarena_lite.png" width="60%">
+</div>
+<div align="center">
+  <img src="doc/Regression.png" width="45%" style="margin-right:2%;">
+  <img src="doc/TabArena_REG.png" width="40.3%">
 </div>
 
 ## ➩ Missing Values Imputation (Tech Report)
 <div align="center">
-  <img src="doc/MissingValueImputation.png" alt="Missing value imputation" width="80%">
+  <img src="doc/MissingValueImputation.png" alt="Missing value imputation" width="60%">
 </div>
 
 # ➤ Tutorials 
